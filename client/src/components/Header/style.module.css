@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primaty-grey-light, #f6f5f4);
+  box-shadow: 0px -1px 0px 0px #e0e0e0 inset;
+  padding: 24px 0;
+}
+.content{
+    
+}
+
+nav{
+    display: flex;
+}
