@@ -1,24 +1,24 @@
-const { getUserDB, getUserByIdDB, createUserDB,updateUserDB, deleteUserDB } = require('../repository/user.repository')
+const { getUserDB, getUserByIdDB, createUserDB, updateUserDB, deleteUserDB } = require('../repository/user.repository')
 
 async function getUser() {
-    return getUserDB()
+    return await getUserDB()
 }
 
 async function getUserById(id) {
-    return getUserByIdDB(id)
+    return await getUserByIdDB(id)
 }
 
 async function createUser(name, surname, email, pwd, role) {
-    const user = await createUserDB(name, surname, email, pwd, role)
-    return user
+    return await createUserDB(name, surname, email, pwd, role)
+
 }
 async function updateUser(id, name, surname, email, pwd, role) {
-    const user = await updateUserDB(id, name, surname, email, pwd, role)
-    return user
+    return await updateUserDB(id, name, surname, email, pwd, role)
+
 }
 async function deleteUser(id) {
-    const user = await deleteUserDB(id)
-    return user
+    return await deleteUserDB(id)
+
 }
 
 
