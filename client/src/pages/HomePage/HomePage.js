@@ -23,7 +23,7 @@ function HomePage() {
             </div>
 
             <div className={style.learnBlock}>
-                <div className={style.learnBlockWidth }>
+                <div className={style.learnBlockWidth}>
                     <div className={style.learnImg}></div>
                     <div className={style.learnBlockContent}>
                         <h2>Learn a language in a playful way</h2>
@@ -36,7 +36,15 @@ function HomePage() {
                     </div>
                 </div>
             </div>
-            <div></div>
+
+            <div className={style.knowledgeBlock}>
+                <div className={style.knowledgeBlockContent}>
+                    <h2>Increase your knowledge</h2>
+                    <p>Traditional and new effective approaches to learning languages</p>
+                    <div className={style.bookBtn}>Textbook →</div>
+                </div>
+                <div className={style.knowledgeImg}></div>
+            </div>
             <div></div>
 
         </>
