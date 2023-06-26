@@ -1,0 +1,139 @@
+.preview {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 7% auto 0;
+  position: relative;
+}
+
+.previewContent {
+  width: 510px;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.textPlatform {
+  color: var(--primaty-cyan-dark, #2b788b);
+  font: 700 16px "Montserrat";
+}
+
+.preview h1 {
+  color: var(--primaty-black, #000);
+  font-size: 600 56px "Dela Gothic One";
+}
+
+.textAdditional {
+  color: var(--primaty-grey-dark, #757575);
+  font: 600 18px "Montserrat";
+}
+
+.btn {
+  padding: 14px 0;
+  text-align: center;
+  width: 165px;
+  border-radius: 100px;
+  color: #2b788b;
+  background: var(--primaty-cyan-light, #c3dce3);
+}
+
+.statictics {
+  display: flex;
+  width: 175px;
+  flex-direction: column;
+}
+
+.lightning {
+  background-image: url(./assets/lightning.svg);
+  width: 24px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+
+.statictics .studentsCount {
+  color: #000;
+  font: 600 40px "Dela Gothic One";
+  text-align: center;
+}
+
+.statictics p span {
+  color: rgba(43, 120, 139, 1);
+}
+
+.students {
+  color: #585858;
+  font: 600 16px "Montserrat";
+  text-align: center;
+}
+
+.preview .manImg {
+  background-image: url(./assets/man.svg);
+  width: 933px;
+  height: 601px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 50%;
+}
+
+.learnBlock {
+  width: 100%;
+  background: #fff;
+}
+.learnBlockWidth {
+  width: 1200px;
+  margin: 7% auto;
+  padding: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.learnImg {
+  background-image: url(./assets/learn.svg);
+  width: 933px;
+  height: 601px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.learnBlockContent{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     height: 430px;
+    width: 700px;
+}
+
+
+.learnBlockContent h2 {
+  color: var(--primaty-black, #000);
+  font: 600 48px "Dela Gothic One";
+}
+
+.learnBlockContent p {
+  color: var(--primaty-grey-dark, #757575);
+  font-family: 600 18px "Montserrat";
+}
+.wrapperIcons{
+    display: flex;
+}
+
+.sprint{
+    background-image: url(./assets/Group\ 11.svg);
+    width: 172px;
+    height: 145px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.tasks{
+    background-image: url(./assets/Group\ 10.svg);
+    width: 172px;
+    height: 145px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
