@@ -45,7 +45,15 @@ function HomePage() {
                 </div>
                 <div className={style.knowledgeImg}></div>
             </div>
-            <div></div>
+
+            <div className={style.watchStatisticsBlock}>
+            <div className={style.staticticsImg}></div>
+            <div className={style.watchStatisticsBlockContent}>
+                    <h2>Watch your progress every day</h2>
+                    <p>Save statistics on your achievements and mistakes</p>
+                    <div className={style.bookBtn}>Statistics →</div>
+                </div>
+            </div>
 
         </>
     )
