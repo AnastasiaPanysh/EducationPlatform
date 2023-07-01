@@ -11,20 +11,22 @@
 }
 
 .wrapper {
-  background: var(--primaty-grey-light, #f6f5f4);
-  box-shadow: 0px -1px 0px 0px #e0e0e0 inset;
+  background:#f6f5f4;
   padding: 24px 0;
   margin-top: 2%;
 
   .content {
     width: 1200px;
     margin: 0 auto;
+
+
+  .line {
+    height: 2px;
+    background-color: rgb(184, 184, 184);
+    margin: 2% 0;
   }
 
   nav {
-    &:last-child {
-      margin-top: 2%;
-    }
 
     @extend %display-flex;
 
@@ -32,6 +34,9 @@
     .developers {
       @extend %display-flex;
     }
+
+
+
     p {
       color: var(--primaty-grey-dark, #757575);
       font: 600 12px Montserrat;
@@ -63,4 +68,5 @@
       }
     }
   }
+}
 }
