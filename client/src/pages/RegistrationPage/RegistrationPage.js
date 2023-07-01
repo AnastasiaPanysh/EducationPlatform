@@ -20,7 +20,7 @@ function RegistrationPage() {
             <Header />
             <div className={style.wrapper}>
                 <div className={style.loginForm}>
-                    <h1>Login</h1>
+                    <h1>Sign Up</h1>
                     <div>
                         <input name='name' onChange={changeInputValue} placeholder='Placeholder name' />
                     </div>
