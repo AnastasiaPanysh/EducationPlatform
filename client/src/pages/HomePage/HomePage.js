@@ -1,5 +1,6 @@
+import Footer from "../../components/Footer/Footer"
 import Header from "../../components/Header/Header"
-import style from './style.module.css'
+import style from './style.module.scss'
 
 function HomePage() {
     return (
@@ -47,6 +48,7 @@ function HomePage() {
             </div>
 
             <div className={style.watchStatisticsBlock}>
+            <div className={style.watchStatisticsWidth}>
             <div className={style.staticticsImg}></div>
             <div className={style.watchStatisticsBlockContent}>
                     <h2>Watch your progress every day</h2>
@@ -54,6 +56,9 @@ function HomePage() {
                     <div className={style.bookBtn}>Statistics →</div>
                 </div>
             </div>
+            </div>
+
+            <Footer></Footer>
 
         </>
     )

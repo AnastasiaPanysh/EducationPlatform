@@ -1,17 +1,29 @@
+%image-params {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+%button-params {
+  padding: 14px 0;
+  text-align: center;
+  color: #2b788b;
+  background: var(--primaty-cyan-light, #c3dce3);
+  border-radius: 100px;
+}
+
 .preview {
   display: flex;
   justify-content: space-between;
   width: 1200px;
   margin: 7% auto 0;
   position: relative;
-}
 
-.previewContent {
-  width: 510px;
-  height: 470px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  .previewContent {
+    width: 510px;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .textPlatform {
@@ -30,12 +42,8 @@
 }
 
 .btn {
-  padding: 14px 0;
-  text-align: center;
+  @extend %button-params;
   width: 165px;
-  border-radius: 100px;
-  color: #2b788b;
-  background: var(--primaty-cyan-light, #c3dce3);
 }
 
 .statictics {
@@ -48,8 +56,7 @@
   background-image: url(./assets/lightning.svg);
   width: 24px;
   height: 30px;
-  background-repeat: no-repeat;
-  background-size: contain;
+  @extend %image-params;
   display: inline-block;
 }
 
@@ -73,8 +80,7 @@
   background-image: url(./assets/man.svg);
   width: 933px;
   height: 601px;
-  background-repeat: no-repeat;
-  background-size: contain;
+  @extend %image-params;
   position: absolute;
   left: 50%;
 }
@@ -95,8 +101,7 @@
   background-image: url(./assets/learn.svg);
   width: 933px;
   height: 601px;
-  background-repeat: no-repeat;
-  background-size: contain;
+  @extend %image-params;
 }
 
 .learnBlockContent {
@@ -122,19 +127,17 @@
 }
 
 .sprint {
-  background-image: url(./assets/Group\ 11.svg);
+  background-image: url(./assets/img11.svg);
   width: 172px;
   height: 145px;
-  background-repeat: no-repeat;
-  background-size: contain;
+  @extend %image-params;
 }
 
 .tasks {
-  background-image: url(./assets/Group\ 10.svg);
+  background-image: url(./assets/ing10.svg);
   width: 172px;
   height: 145px;
-  background-repeat: no-repeat;
-  background-size: contain;
+  @extend %image-params;
 }
 
 .knowledgeBlock {
@@ -144,7 +147,8 @@
   margin: 0 auto;
 }
 
-.knowledgeBlockContent,.watchStatisticsBlockContent {
+.knowledgeBlockContent,
+.watchStatisticsBlockContent {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -153,47 +157,45 @@
   height: 330px;
 }
 
- h2 {
+h2 {
   color: var(--primaty-black, #000);
   font: 600 48px "Dela Gothic One";
 }
 
-.knowledgeBlockContent p,.watchStatisticsBlockContent p {
+.knowledgeBlockContent p,
+.watchStatisticsBlockContent p {
   color: var(--primaty-grey-dark, #757575);
   font-family: 600 18px "Montserrat";
 }
 
 .bookBtn {
   width: 131px;
-  padding: 14px 0;
-  text-align: center;
-  border-radius: 100px;
-  background: var(--primaty-cyan-light, #c3dce3);
-  color: #2b788b;
-  font: 700 16px " Montserrat";
+  @extend %button-params;
 }
 
 .knowledgeImg {
   background-image: url(./assets/book.svg);
   width: 650px;
   height: 601px;
-  background-repeat: no-repeat;
-  background-size: contain;
-
+  @extend %image-params;
 }
 
+.watchStatisticsBlock {
 
-.watchStatisticsBlock{
+  background: #FFF;
+}
+
+.watchStatisticsWidth{
+  width: 1200px;
   display: flex;
   justify-content: space-between;
-  width: 1200px;
   margin: 0 auto;
+  padding: 14px 0;
 }
 
 .staticticsImg {
   background-image: url(./assets/manaNDGIRL.svg);
   width: 680px;
   height: 409px;
-  background-repeat: no-repeat;
-  background-size: contain;
+  @extend %image-params;
 }
