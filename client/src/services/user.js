@@ -23,6 +23,6 @@ export const userApi = createApi({
     })
 })
 
-export const { useCreateUserMutation } = userApi
+export const { useCreateUserMutation, useGetUserMutation } = userApi
 
 

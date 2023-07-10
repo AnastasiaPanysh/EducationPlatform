@@ -2,7 +2,7 @@ const { pool } = require('../DB')
 
 
 
-async function getUserByEmailDB(email) {
+async function getUserByEmailDB(email,pwd) {
     const client = await pool.connect()
     const sql = 'SELECT * FROM USERS where email=$1 AND pwd=$2'
     const result = (await client.query(sql, [email, pwd])).rows

@@ -1,4 +1,4 @@
-const {registrationUserDB, authorizationUserDB} = require('../repository/api.repository')
+const {registrationUserDB, getUserByEmailDB} = require('../repository/api.repository')
 
 
 async function registrationUser(name, surname, email, pwd, role) {

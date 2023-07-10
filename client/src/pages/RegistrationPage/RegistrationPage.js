@@ -3,13 +3,19 @@ import Header from '../../components/Header/Header'
 import style from './style.module.scss'
 import { useCreateUserMutation } from '../../services/user'
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 function RegistrationPage() {
-    const [createCourse] = useCreateUserMutation()
+    const [createUser] = useCreateUserMutation()
     const [value, setValue] = useState({ name: '', surname: '', email: '', pwd: '', role: '' })
+    const navigate = useNavigate();
 
     function sendRequest() {
-        createCourse(value)
+        createUser(value)
+        .then(() => {
+               navigate('/course'); 
+          })
     }
 
     function changeInputValue(event) {
