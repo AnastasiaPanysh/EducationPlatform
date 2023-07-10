@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 
 function RegistrationPage() {
     const [createCourse] = useCreateUserMutation()
-    const [value, setValue] = useState({ name: '', description: '', location: '' })
+    const [value, setValue] = useState({ name: '', surname: '', email: '', pwd: '', role: '' })
 
     function sendRequest() {
         createCourse(value)
