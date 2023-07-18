@@ -1,4 +1,4 @@
-const { pool } = require('../DB')
+import pool  from "../DB";
 
 
 async function getUserDB() {
@@ -25,7 +25,7 @@ async function createUserDB(name, surname, email, pwd, role) {
         return result
     } catch (error) {
         await client.query('ROLLBACK')
-        console.log(`createUserDB: ${error.message}`);
+        console.log(`createUserDB: error`);
         return []
     }
 }
@@ -40,7 +40,7 @@ async function updateUserDB(id, name, surname, email, pwd, role) {
         return result
     } catch (error) {
         await client.query('ROLLBACK')
-        console.log(`deleteUserDB: ${error.message}`);
+        console.log(`deleteUserDB:error`);
         return []
     }
 }
@@ -54,9 +54,9 @@ async function deleteUserDB(id) {
         return result
     } catch (error) {
         await client.query('ROLLBACK')
-        console.log(`deleteUserDB: ${error.message}`);
+        console.log(`deleteUserDB: error`);
         return []
     }
 }
 
-module.exports = { getUserDB, getUserByIdDB, createUserDB, updateUserDB, deleteUserDB }
+export { getUserDB, getUserByIdDB, createUserDB, updateUserDB, deleteUserDB }

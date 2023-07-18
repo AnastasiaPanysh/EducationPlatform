@@ -1,4 +1,4 @@
-const { pool } = require("../DB")
+import  pool  from "../DB";
 
 async function getCourseDB() {
     const client =await pool.connect()
@@ -25,7 +25,7 @@ async function createCourseDB(title) {
         return result
     } catch (error) {
         await client.query('ROLLBACK')
-        console.log(`createCourseDB: ${error.message}`);
+        console.log(`createCourseDB: error`);
         return []
     }
 }
@@ -40,7 +40,7 @@ async function updateCourseDB(id,title) {
         return result
     } catch (error) {
         await client.query('ROLLBACK')
-        console.log(`createCourseDB: ${error.message}`);
+        console.log(`createCourseDB: error`);
         return []
     }
 }
@@ -55,10 +55,10 @@ async function deleteCourseDB(id) {
         return result
     } catch (error) {
         await client.query('ROLLBACK')
-        console.log(`deleteUserDB: ${error.message}`);
+        console.log(`deleteUserDB: error`);
         return []
     }
 }
 
 
-module.exports = { getCourseDB,getCourseByIdDB, createCourseDB,updateCourseDB ,deleteCourseDB}
+export { getCourseDB,getCourseByIdDB, createCourseDB,updateCourseDB ,deleteCourseDB}
